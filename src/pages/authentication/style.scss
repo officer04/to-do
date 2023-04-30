@@ -1,0 +1,39 @@
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.section__content {
+  max-width: 450px;
+}
+
+.section__title {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.section__text {
+  margin-bottom: 20px;
+  color: #696c80;
+}
+
+.confirmation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.section__footer {
+  text-align: center;
+}
+
+.section__footer span a {
+  color: #004de5;
+  cursor: pointer;
+}

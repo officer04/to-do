@@ -1,0 +1,35 @@
+@import './../../../styles/vars.scss';
+
+.btn {
+  width: 450px;
+  height: 45px;
+  border: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+  background-color: $blueLight;
+  color: $white;
+  border-radius: 5px;
+  transition:  background-color 0.3s ease-in;
+
+  p {
+    margin-left: 10px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 37%;
+    width: 20px;
+    height: 20px;
+    background-image: url(./../../../../public/img/log-in.svg);
+  }
+
+  &:hover {
+    background-color: $blueDark;
+  }
+
+}
+

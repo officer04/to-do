@@ -1,0 +1,79 @@
+.section {
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+
+.section__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.section__content {
+  max-width: 450px;
+}
+
+.section__title {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.section__email {
+  margin-bottom: 15px;
+}
+
+.section__password {
+  position: relative;
+}
+
+.section__email input {
+  position: relative;
+  padding: 15px 260px 15px 20px;
+  border-radius: 4px;
+  border: 1px solid #BABDCC;
+}
+
+.section__password::after {
+  position: absolute;
+  content: '';
+  background-image: url(./../img/eye-off.svg);
+  width: 24px;
+  transform: translateY(10%);
+  height: 24px;
+  top: 50%;
+  right: 20px;
+  cursor: pointer;
+}
+
+.section__email p {
+  margin-bottom: 5px;
+}
+
+.section__password {
+  position: relative; 
+  margin-bottom: 15px;
+}
+
+.section__password p {
+  margin-bottom: 5px;
+}
+
+.section__password input {
+  padding: 15px 260px 15px 20px;
+  border-radius: 4px;
+  border: 1px solid #BABDCC;
+}
+
+.section__password input:focus,
+.section__email input:focus {
+  outline:none;
+  border: 1px solid #004DE5;
+}
+
+.section__footer {
+  text-align: center;
+}
+
+.section__footer span {
+  color: #004DE5;
+  cursor: pointer;
+}

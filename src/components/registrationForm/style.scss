@@ -1,0 +1,42 @@
+@import './../../styles/vars.scss';
+
+.section__email {
+  margin-bottom: 15px;
+}
+
+.section__password {
+  position: relative;
+}
+
+.section__email input {
+  position: relative;
+  padding: 15px 260px 15px 20px;
+  border-radius: 4px;
+  border: 1px solid #babdcc;
+}
+
+.section__email p {
+  margin-bottom: 5px;
+}
+
+.section__password {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.section__password p {
+  margin-bottom: 5px;
+}
+
+.section__password input {
+  padding: 15px 260px 15px 20px;
+  border-radius: 4px;
+  border: 1px solid #babdcc;
+}
+
+.section__password input:focus,
+.section__email input:focus {
+  outline: none;
+  border: 1px solid $blueDark;
+}
+

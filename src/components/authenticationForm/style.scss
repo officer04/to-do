@@ -1,0 +1,40 @@
+@import './../../styles/vars.scss';
+
+.section__email {
+  margin-bottom: 15px;
+}
+
+.section__password-wrapp{
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-image: url(./../../../public/img/eye-off.svg);
+    width: 24px;
+    height: 24px;
+    top: 24%;
+    right: 20px;
+    cursor: pointer;
+  }
+}
+
+.section__password {
+  position: relative;
+  margin-bottom: 15px;
+
+  p {
+  margin-bottom: 5px;
+  }
+  
+}
+
+.section__password input:focus,
+.section__email input:focus {
+  outline: none;
+  border: 1px solid #004de5;
+}
+
+.error {
+  color: $error;
+}
