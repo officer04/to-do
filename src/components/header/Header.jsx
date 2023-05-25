@@ -1,39 +1,20 @@
-import { NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import './style.scss';
+import HeaderBase from '../headerBase/HeaderBase';
+import HeaderLogin from '../headerLogin/HeaderLogin';
 
-const HeaderValidation = ({ state, settingHeader}) => {
+const Header = ({ state, settingHeader, exact, match }) => {
+  const location = useLocation();
+  const loginHeaderPages = ['/authorization', '/registration'];
+  const getHeader = () => {
+    if (loginHeaderPages.includes(location.pathname)) {
+      return <HeaderLogin />;
+    } else {
+      return <HeaderBase />;
+    }
+  };
 
-  return (
-    <header className="header">
-      <div className="container">
-        <div className="header__content">
-          <NavLink to="/">
-            <img onClick={settingHeader} className="logo" src="./../img/logo.svg" alt="" />
-          </NavLink>
-          {state && (
-            <div className="to-come">
-              <ul>
-                <NavLink to="/authorization">
-                  <li onClick={settingHeader}>
-                    <a href="#!">
-                      <b>Войти</b>  
-                    </a>
-                  </li>
-                </NavLink>
-                <NavLink to="/registration">
-                  <li onClick={settingHeader}>
-                    <a href="#!" className="btn--home">
-                      Начать бесплатно
-                    </a>
-                  </li>
-                </NavLink>
-              </ul>
-            </div>
-          )}
-        </div>
-      </div>
-    </header>
-  );
+  return getHeader();
 };
 
-export default HeaderValidation;
+export default Header;

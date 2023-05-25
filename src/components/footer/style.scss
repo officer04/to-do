@@ -1,10 +1,11 @@
-.footer__content {
-  min-height: 90px;
-  display: flex;
-  align-items: center;
-  border-top: 1px solid #D8DAE5;
-}
-
-.footer__content p {
-  color: #696C80;
+.footer {
+  &__content {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #D8DAE5;
+    p {
+      color: #696C80;
+    }
+  }
 }

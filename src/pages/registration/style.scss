@@ -1,41 +1,34 @@
 @import './../../styles/vars.scss';
 
-.section {
+.section-registration {
   padding-top: 20px;
   padding-bottom: 40px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    max-width: 450px;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: #696c80;
+  }
+
+  &__footer {
+    text-align: center;
+    a {
+      color: $blueLight;
+      cursor: pointer;
+    }
+  }
 }
 
-.section__wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.section__content {
-  max-width: 450px;
-}
-
-.section__title {
-  font-size: 24px;
-  margin-bottom: 18px;
-}
-
-.section__text {
-  margin-bottom: 20px;
-  color: #696C80;
-}
-
-.confirmation {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.section__footer {
-  text-align: center;
-}
-
-.section__footer span a {
-  color: $blueLight;
-  cursor: pointer;
-}

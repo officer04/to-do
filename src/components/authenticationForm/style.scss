@@ -1,40 +1,83 @@
 @import './../../styles/vars.scss';
 
-.section__email {
-  margin-bottom: 15px;
-}
+.section-authentication-form {
+  &__email {
+    margin-bottom: 15px;
 
-.section__password-wrapp{
-  position: relative;
+    input {
+      padding: 15px 260px 15px 20px;
+      border-radius: 4px;
+      border: 1px solid #babdcc;
+    }
+  }
 
-  &::after {
-    position: absolute;
-    content: '';
-    background-image: url(./../../../public/img/eye-off.svg);
-    width: 24px;
-    height: 24px;
-    top: 24%;
-    right: 20px;
-    cursor: pointer;
+  &__password-wrapp {
+    position: relative;
+
+    .section__password-wrapp-eye {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 24%;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &__password {
+    position: relative;
+    margin-bottom: 15px;
+
+    input {
+      padding: 15px 260px 15px 20px;
+      border-radius: 4px;
+      border: 1px solid #babdcc;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__password input:focus,
+  &__email input:focus {
+    outline: none;
+    border: 1px solid #004de5;
+  }
+
+  .error {
+    color: $error;
   }
 }
 
-.section__password {
-  position: relative;
-  margin-bottom: 15px;
+// .section__password-wrapp {
+//   position: relative;
 
-  p {
-  margin-bottom: 5px;
-  }
-  
-}
+//   &-eye {
+//     position: absolute;
+//     width: 24px;
+//     height: 24px;
+//     top: 24%;
+//     right: 20px;
+//     cursor: pointer;
+//   }
+// }
 
-.section__password input:focus,
-.section__email input:focus {
-  outline: none;
-  border: 1px solid #004de5;
-}
+// .section__password {
+//   position: relative;
+//   margin-bottom: 15px;
 
-.error {
-  color: $error;
-}
+//   p {
+//     margin-bottom: 5px;
+//   }
+// }
+
+// .section__password input:focus,
+// .section__email input:focus {
+//   outline: none;
+//   border: 1px solid #004de5;
+// }
+
+// .error {
+//   color: $error;
+// }

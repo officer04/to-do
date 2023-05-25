@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header state={state} settingHeader={settingHeader} />
+        <Header state={state} settingHeader={settingHeader} match exact/>
         <Routes>
           <Route path="/" element={<Home settingHeader={settingHeader} />} />
           <Route path="/registration" element={<Registration />} />
